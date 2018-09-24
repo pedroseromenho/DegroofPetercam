@@ -1,0 +1,53 @@
+%!Adobe-FontList 1.18
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:FaktPro-Blond
+FamilyName:Fakt Pro
+StyleName:Blond
+MenuName:Fakt Pro Bln
+StyleBits:0
+WeightClass:350
+WidthClass:5
+AngleClass:0
+FullName:Fakt Pro Blond
+WritingScript:Roman
+OutlineFileName:\FaktPro-Blond.otf
+DataFormat:sfntData
+UsesStandardEncoding:no
+isCFF:yes
+hasSVG:no
+FileLength:123428
+FileModTime:1288730996
+NameArray:0,Mac,18,Fakt Pro Bln
+NameArray:0,Mac,4,Fakt Pro Blond
+NameArray:0,Win,1,Fakt Pro Bln
+NameArray:0,Win,16,Fakt Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:RomainHeadline
+FamilyName:Romain Headline
+StyleName:Regular
+MenuName:Romain Headline
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Romain Headline
+WritingScript:Roman
+OutlineFileName:\RomainHeadline-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+FileLength:29868
+FileModTime:1414067924
+NameArray:0,Mac,4,Romain Headline
+NameArray:0,Win,1,Romain Headline
+%EndFont
+
