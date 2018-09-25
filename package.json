@@ -1,5 +1,5 @@
 {
-  "name": "firebase_auth",
+  "name": "react_native_routing",
   "version": "0.0.0",
   "description": "No description",
   "author": null,
@@ -9,7 +9,8 @@
     "expo": "^30.0.0",
     "react": "16.3.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-30.0.0.tar.gz",
-    "firebase": "5.5.1",
-    "react-native-elements": "0.19.1"
+    "react-native-elements": "0.19.1",
+    "react-native-router": "0.2.1",
+    "react-navigation": "2.16.0"
   }
 }
