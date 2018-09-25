@@ -1,18 +1,22 @@
 import React from "react";
 import { StyleSheet, Text, View, Image } from "react-native";
-import { Header } from "react-native-elements";
-import { HeaderLogo } from "./components/Header/HeaderLogo";
+import HeaderContainer from "./components/Header/HeaderContainer";
+import CardItem from "./components/Cards/CardItem";
+import FooterContainer from "./components/Footer/Footer";
 
 export default class App extends React.Component {
   render() {
     return (
-      <View>
-        <Header
-          leftComponent={{ icon: "menu", color: "#fff" }}
-          // centerComponent={{ text: "MY TITLE", style: { color: "#fff" } }}
-          centerComponent={<HeaderLogo />}
-          rightComponent={{ icon: "home", color: "#fff" }}
-        />
+      <View style={styles.container}>
+        <View style={styles.header}>
+          <HeaderContainer />
+        </View>
+        <View style={styles.cardItem}>
+          <CardItem />
+        </View>
+        <View style={styles.footer}>
+          <FooterContainer />
+        </View>
       </View>
     );
   }
@@ -20,9 +24,16 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center"
+    flex: 1
+  },
+  header: {
+    heigth: "10%"
+  },
+  cardItem: {
+    overflow: "scroll",
+    height: "80%"
+  },
+  footer: {
+    height: "10%"
   }
 });
