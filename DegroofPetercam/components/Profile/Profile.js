@@ -13,7 +13,7 @@ export default class Profile extends React.Component {
           <AvatarText />
         </View>
         <View style={{ paddingTop: 30 }}>
-          <Button />
+          <Button title={"Modify personal informations".toLocaleUpperCase()} />
         </View>
       </View>
     );

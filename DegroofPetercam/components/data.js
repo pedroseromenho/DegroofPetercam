@@ -36,3 +36,17 @@ export const offers = [
     duration: "8h"
   }
 ];
+
+export const singleOffer = [
+  {
+    date: "01-09-2018",
+    name: "Becode",
+    initials: "B",
+    area: "Brussels",
+    skills: "Human Ressources",
+    type: "coaching",
+    duration: "8h",
+    description:
+      "Our mission : Enabling tomorrow's digital talents to blossom. We believe that education makes anything possible. Since 2017, BeCode has been offering free training courses for jobseekers to become web developers in partnership with Simplon."
+  }
+];

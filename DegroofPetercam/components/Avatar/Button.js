@@ -7,11 +7,11 @@ export default class ButtonApp extends React.Component {
     return (
       <View style={styles.Button}>
         <Button
-          title={"modify personal informations".toUpperCase()}
+          title={this.props.title}
           color="#50C285"
           buttonStyle={{
             backgroundColor: "white",
-            width: 300,
+            padding: 10,
             height: 45,
             color: "#000",
             shadowOffset: { width: 2, height: 2 },

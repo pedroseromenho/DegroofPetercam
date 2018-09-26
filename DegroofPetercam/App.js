@@ -2,6 +2,7 @@ import React from "react";
 
 import ViewLogin from "./Views/ViewLogin"; // ok
 import ViewSignUp from "./Views/ViewSignUp"; // ok
+import ViewSignIn from "./Views/ViewSignIn"; // ok
 import ViewOffers from "./Views/ViewOffers"; // ok
 import ViewOfferDetails from "./Views/ViewOfferDetails";
 import ViewMyMissions from "./Views/ViewMyMissions";
@@ -13,6 +14,6 @@ import ViewProfile from "./Views/ViewProfile"; // ok
 
 export default class App extends React.Component {
   render() {
-    return <ViewProfile />;
+    return <ViewSignIn />;
   }
 }

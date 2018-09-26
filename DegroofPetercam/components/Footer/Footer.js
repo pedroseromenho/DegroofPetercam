@@ -12,12 +12,6 @@ export default class FooterContainer extends React.Component {
         <Icon name="bookmark" color="#6D8E7D" size="28" />
         <Icon name="history" color="#6D8E7D" size="28" />
         <Icon name="face" color="#6D8E7D" size="28" />
-        {/* <SvgUri
-                    width="130"
-                    height="50"
-                    style={styles.logo}
-                    source={require("./assets/user-solid.svg")}
-                /> */}
       </View>
     );
   }

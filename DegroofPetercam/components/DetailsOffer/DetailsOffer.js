@@ -1,118 +1,83 @@
 import React from "react";
 import { View, Text, Image, StyleSheet, ScrollView } from "react-native";
-import { Icon, Avatar } from "react-native-elements";
+import { Icon, Avatar, FormLabel } from "react-native-elements";
 import AvatarContainer from "../Avatar/AvatarContainer";
 import AvatarText from "../Avatar/AvatarText";
 import Button from "../Avatar/Button";
-import { offers } from "../data";
+import { singleOffer } from "../data";
 
 export default class DetailsOffer extends React.Component {
   render() {
     return (
       <ScrollView style={{}} containerStyle={{ padding: 0 }}>
-        {offers.map((o, i) => {
+        {singleOffer.map((o, i) => {
           return (
-            <View
-              style={{
-                justifyContent: "center",
-                alignItems: "center",
-                display: "flex",
-                marginTop: 20
-              }}
-            >
-              <Avatar
-                xlarge
-                rounded
-                title={o.initials}
-                overlayContainerStyle={{ backgroundColor: "#CCE3D7" }}
-                //   source={{ uri: "https://facebook.github.io/react/logo-og.png" }}
-
+            <View>
+              <View
                 style={{
-                  borderRadius: 100
+                  justifyContent: "center",
+                  alignItems: "center",
+                  display: "flex",
+                  marginTop: 20
                 }}
-              />
+              >
+                <Avatar
+                  xlarge
+                  rounded
+                  title={o.initials}
+                  overlayContainerStyle={{ backgroundColor: "#CCE3D7" }}
+                  style={{
+                    borderRadius: 100
+                  }}
+                />
+              </View>
+              <View
+                style={{
+                  flexDirection: "row",
+                  justifyContent: "space-between",
+                  paddingLeft: 20,
+                  paddingRight: 60,
+                  paddingTop: 20,
+                  width: "80%"
+                }}
+              >
+                <View>
+                  <Text style={styles.label}>Request:</Text>
+                  <Text style={styles.label}>Area:</Text>
+                  <Text style={styles.label}>Skills:</Text>
+                  <Text style={styles.label}>Area:</Text>
+                  <Text style={styles.label}>Duration:</Text>
+                </View>
+                <View>
+                  <Text style={{ paddingTop: 5, color: "#555555" }}>
+                    {o.name}
+                  </Text>
+                  <Text style={{ paddingTop: 5, color: "#555555" }}>
+                    {o.area}
+                  </Text>
+                  <Text style={{ paddingTop: 5, color: "#555555" }}>
+                    {o.skills}
+                  </Text>
+                  <Text style={{ paddingTop: 5, color: "#555555" }}>
+                    {o.area}
+                  </Text>
+                  <Text style={{ paddingTop: 5, color: "#555555" }}>
+                    {o.duration}
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={{
+                  padding: 20
+                }}
+              >
+                <Text style={styles.label}>Description:</Text>
+                <Text style={{ paddingTop: 5, color: "#555555" }}>
+                  {o.description}
+                </Text>
+              </View>
+              <Button title={"Apply for this mission".toLocaleUpperCase()} />
             </View>
-
-            // <View key={i} style={{ padding: 10, paddingTop: 20 }}>
-            //   <Text style={{ fontSize: 12, color: "#707070" }}>
-            //     {"Posted: " + o.date}
-            //   </Text>
-            //   <View style={styles.card}>
-            //     <View
-            //       style={{
-            //         borderRightWidth: 1,
-            //         paddingRight: 15,
-            //         borderColor: "#DDDDDD"
-            //       }}
-            //     >
-            //       <Avatar
-            //         large
-            //         rounded
-            //         // source={{
-            //         //   uri: o.avatar
-            //         // }}
-            //         style={{ justifyContent: "center" }}
-            //         title={o.initials}
-            //         overlayContainerStyle={{ backgroundColor: "#CCE3D7" }}
-            //       />
-            //     </View>
-            //     <View style={styles.text}>
-            //       <View
-            //         style={{
-            //           flexDirection: "row",
-            //           justifyContent: "space-between"
-            //         }}
-            //       >
-            //         <Text
-            //           h1
-            //           style={{
-            //             fontWeight: "bold",
-            //             color: "#555555",
-            //             fontSize: 17,
-            //             paddingBottom: 3
-            //           }}
-            //         >
-            //           {o.name}
-            //         </Text>
-            //         <Icon name="bookmark" color="#9A9A9A" />
-            //       </View>
-            //       <Text
-            //         h2
-            //         style={{
-            //           fontWeight: "bold",
-            //           color: "#9A9A9A",
-            //           paddingBottom: 3
-            //         }}
-            //       >
-            //         {o.skills.toUpperCase()}
-            //       </Text>
-            //       <Text
-            //         h3
-            //         style={{
-            //           paddingBottom: 3,
-            //           fontWeight: "bold",
-            //           color: "#555555"
-            //         }}
-            //       >
-            //         {o.area}
-            //       </Text>
-            //       <View
-            //         style={{
-            //           flexDirection: "row",
-            //           justifyContent: "space-between"
-            //         }}
-            //       >
-            //         <Text h3 style={{ color: "#555555" }}>
-            //           {o.type + " / " + o.duration}
-            //         </Text>
-            //         <Text h3 style={{ color: "#9A9A9A", fontWeight: "bold" }}>
-            //           …
-            //         </Text>
-            //       </View>
-            //     </View>
-            //     <View />
-            //   </View>
-            // </View>
           );
         })}
       </ScrollView>
@@ -125,5 +90,10 @@ const styles = StyleSheet.create({
     display: "flex",
     alignItems: "center",
     justifyContent: "center"
+  },
+  label: {
+    color: "#50C285",
+    paddingTop: 5,
+    fontWeight: "bold"
   }
 });
