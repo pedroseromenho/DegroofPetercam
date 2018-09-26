@@ -11,7 +11,7 @@ import firebase from 'firebase';
 import { AppNavigation } from './src/navigation/AppNavigation';
 import {THEME_COLOR} from "./src/lib/Constants";
 
-
+import firebase from 'C:\Users\Gaet\Desktop\Becode.Projects\react-native-app\DegroofPetercam\DegroofPetercam\node_modules\@firebase';
 
 export default class App extends React.Component {
 
