@@ -1,40 +1,37 @@
-import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import { Button, colors } from 'react-native-elements';
+import React from "react";
+import { View, Text, StyleSheet } from "react-native";
+import { Button, colors } from "react-native-elements";
 
 export default class ButtonApp extends React.Component {
-    render() {
-        return (
-            <View style={styles.Button}>
-                <Button
-                    title={"modify personal informations".toUpperCase()}
-                    color="#50C285"
-                    buttonStyle={{
-                        backgroundColor: "white",
-                        width: 300,
-                        height: 45,
-                        borderColor: "#50C285",
-                        borderWidth: 2,
-
-
-                    }}
-                />
-            </View>
-
-        )
-    }
+  render() {
+    return (
+      <View style={styles.Button}>
+        <Button
+          title={"modify personal informations".toUpperCase()}
+          color="#50C285"
+          buttonStyle={{
+            backgroundColor: "white",
+            width: 300,
+            height: 45,
+            color: "#000",
+            shadowOffset: { width: 2, height: 2 },
+            shadowColor: "#DDDDDD",
+            shadowOpacity: 0.5,
+            borderRadius: 5,
+            borderWidth: 1,
+            borderColor: "#CCE3D7"
+          }}
+        />
+      </View>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
-    Button: {
-        alignItems: "flex-end",
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: "center",
-
-
-
-
-
-    }
-})
+  Button: {
+    alignItems: "flex-end",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center"
+  }
+});
