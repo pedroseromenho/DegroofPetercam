@@ -1,3 +1,6 @@
+<script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+
+
 import React from 'react';
 import { StyleSheet, View, Platform, StatusBar } from 'react-native';
 import { Provider } from 'react-redux';
@@ -8,11 +11,12 @@ import firebase from 'firebase';
 import { AppNavigation } from './src/navigation/AppNavigation';
 import {THEME_COLOR} from "./src/lib/Constants";
 
+
+
 export default class App extends React.Component {
 
   componentWillMount() {
    
-<script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
 
 
   var config = {
@@ -24,7 +28,7 @@ export default class App extends React.Component {
     messagingSenderId: "383857906212"
   };
   firebase.initializeApp(config);
-
+  }
 
   render() {
     const store = createStore(reducers, {}, applyMiddleware(ReduxThunk));
