@@ -5,7 +5,7 @@ import SvgUri from 'react-native-svg-uri';
 import AvatarContainer from './components/Avatar/AvatarContainer';
 import AvatarText from './components/Avatar/AvatarText';
 import ButtonApp from './components/Avatar/Button';
-
+import Map from './components/Map/Map';
 import RatingContainer from './components/Rating/RatingContainer';
 
 
@@ -15,11 +15,12 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <HeaderContainer />
-        <AvatarContainer />
+        <Map />
+        {/* <AvatarContainer />
         <AvatarText />
         <ButtonApp />
 
-        <RatingContainer />
+        <RatingContainer /> */}
 
         {/* <FooterContainer /> */} */}
         {/* <FooterBis /> */}
