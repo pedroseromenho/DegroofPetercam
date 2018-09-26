@@ -1,8 +1,6 @@
 import React from "react";
-import { View, Text, Image, StyleSheet, ScrollView } from "react-native";
-import { Icon, Avatar, FormLabel } from "react-native-elements";
-import AvatarContainer from "../Avatar/AvatarContainer";
-import AvatarText from "../Avatar/AvatarText";
+import { View, Text, StyleSheet, ScrollView } from "react-native";
+import { Avatar } from "react-native-elements";
 import Button from "../Avatar/Button";
 import { singleOffer } from "../data";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View, Image } from "react-native";
+import { Text, View } from "react-native";
 import { Button } from "react-native-elements";
 import SvgUri from "react-native-svg-uri";
 
@@ -16,7 +16,6 @@ export default class LogIn extends React.Component {
         <SvgUri
           width="1500"
           height="700"
-          // height="100%"
           style={{ top: 0, left: -600 }}
           source={require("./fond.svg")}
         />

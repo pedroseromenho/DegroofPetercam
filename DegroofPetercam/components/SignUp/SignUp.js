@@ -1,14 +1,7 @@
 import React from "react";
-import { StyleSheet, Text, View, Image, ScrollView } from "react-native";
+import { StyleSheet, View, ScrollView } from "react-native";
 import RNPickerSelect from "react-native-picker-select";
-import {
-  Button,
-  Input,
-  FormLabel,
-  FormInput,
-  TextInput,
-  FormValidationMessage
-} from "react-native-elements";
+import { Button, FormLabel, FormInput } from "react-native-elements";
 
 export default class SignUp extends React.Component {
   constructor(props) {

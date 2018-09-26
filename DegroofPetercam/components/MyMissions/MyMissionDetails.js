@@ -1,11 +1,31 @@
 import React from "react";
-import { View, Text, StyleSheet, ScrollView } from "react-native";
+import {
+  View,
+  Text,
+  StyleSheet,
+  ScrollView,
+  TouchableOpacity,
+  Alert
+} from "react-native";
 import AvatarContainer from "../../components/Avatar/AvatarContainer";
 import ButtonApp from "../../components/Avatar/Button";
 import Map from "../../components/Map/Map";
 import MyDatePicker from "../../components/DatePicker/DatePicker";
-import { FormLabel, Input, FormInput } from "react-native-elements";
 export default class MyMissionsDetails extends React.Component {
+  button() {
+    Alert.alert(
+      "Confirmation",
+      "Please confirm your application for this offer",
+      [
+        {
+          text: "CANCEL",
+          onPress: () => console.warn("NO Pressed"),
+          style: "cancel"
+        },
+        { text: "CONFIRM", onPress: () => console.warn("YES Pressed") }
+      ]
+    );
+  }
   render() {
     return (
       <ScrollView style={{ padding: 20 }}>
@@ -35,7 +55,9 @@ export default class MyMissionsDetails extends React.Component {
           >
             <MyDatePicker />
           </View>
-          <ButtonApp title={"SUBMIT DATE"} />
+          <TouchableOpacity title={"SUBMIT DATE"} onPress={() => this.button()}>
+            <ButtonApp title={"SUBMIT DATE"} />
+          </TouchableOpacity>
         </View>
         <View
           marginTop={10}

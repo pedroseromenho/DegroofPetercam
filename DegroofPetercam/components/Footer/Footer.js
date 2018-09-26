@@ -1,7 +1,6 @@
 import React from "react";
-import { Header, Icon } from "react-native-elements";
-import { StyleSheet, Text, View } from "react-native";
-import SvgUri from "react-native-svg-uri";
+import { Icon } from "react-native-elements";
+import { StyleSheet, View } from "react-native";
 
 export default class FooterContainer extends React.Component {
   render() {

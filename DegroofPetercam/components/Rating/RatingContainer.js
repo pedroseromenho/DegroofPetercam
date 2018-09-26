@@ -1,9 +1,7 @@
 import React from "react";
-import { Header, Icon } from "react-native-elements";
 import { StyleSheet, Text, View, ScrollView } from "react-native";
 import { Rating, Avatar } from "react-native-elements";
 import { singleOffer } from "../data";
-// import SvgUri from 'react-native-svg-uri';
 
 export default class RatingContainer extends React.Component {
   render() {

@@ -14,6 +14,6 @@ import ViewProfile from "./Views/ViewProfile"; // ok
 
 export default class App extends React.Component {
   render() {
-    return <ViewSignIn />;
+    return <ViewMyMissionDetails />;
   }
 }

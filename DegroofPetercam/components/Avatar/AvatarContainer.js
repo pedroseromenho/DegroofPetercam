@@ -1,6 +1,6 @@
 import React from "react";
-import { View, Text, Image, StyleSheet } from "react-native";
-import { Icon, Avatar } from "react-native-elements";
+import { View, StyleSheet } from "react-native";
+import { Avatar } from "react-native-elements";
 
 export default class AvatarContainer extends React.Component {
   render() {
@@ -11,8 +11,6 @@ export default class AvatarContainer extends React.Component {
           rounded
           title="SS"
           overlayContainerStyle={{ backgroundColor: "#CCE3D7" }}
-          //   source={{ uri: "https://facebook.github.io/react/logo-og.png" }}
-
           style={{ width: 200, height: 200, borderRadius: 100, marginTop: 20 }}
         />
       </View>

@@ -1,10 +1,10 @@
 import React from "react";
 import { View, Text, StyleSheet, ScrollView } from "react-native";
-import { Avatar } from "react-native-elements";
+import { Icon, Avatar } from "react-native-elements";
 
 import { offers } from "../data";
 
-export default class MyMissions extends React.Component {
+export default class Bookmarks extends React.Component {
   render() {
     return (
       <ScrollView style={{}} containerStyle={{ padding: 0 }}>
@@ -48,7 +48,7 @@ export default class MyMissions extends React.Component {
                     >
                       {o.name}
                     </Text>
-                    <Text style={{ color: "#FFB100" }}>Pending</Text>
+                    <Icon name="bookmark" color="#50C285" />
                   </View>
                   <Text
                     h2

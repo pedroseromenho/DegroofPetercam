@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Image, StyleSheet } from "react-native";
+import { View, StyleSheet } from "react-native";
 import AvatarContainer from "../Avatar/AvatarContainer";
 import AvatarText from "../Avatar/AvatarText";
 import Button from "../Avatar/Button";

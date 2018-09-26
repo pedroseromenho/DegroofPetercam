@@ -25,9 +25,6 @@ export default class CardItem extends React.Component {
                   <Avatar
                     large
                     rounded
-                    // source={{
-                    //   uri: o.avatar
-                    // }}
                     style={{ justifyContent: "center" }}
                     title={o.initials}
                     overlayContainerStyle={{ backgroundColor: "#CCE3D7" }}
