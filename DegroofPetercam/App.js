@@ -4,8 +4,10 @@ import HeaderContainer from './components/Header/HeaderContainer';
 import SvgUri from 'react-native-svg-uri';
 import AvatarContainer from './components/Avatar/AvatarContainer';
 import AvatarText from './components/Avatar/AvatarText';
-import ButtonApp from './components/Avatar/Button'
-import Footer from './components/Footer/Footer'
+import ButtonApp from './components/Avatar/Button';
+
+import RatingContainer from './components/Rating/RatingContainer';
+
 
 
 export default class App extends React.Component {
@@ -16,7 +18,11 @@ export default class App extends React.Component {
         <AvatarContainer />
         <AvatarText />
         <ButtonApp />
-        <Footer />
+
+        <RatingContainer />
+
+        {/* <FooterContainer /> */} */}
+        {/* <FooterBis /> */}
 
       </View>
     );
