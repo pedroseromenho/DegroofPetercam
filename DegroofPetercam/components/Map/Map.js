@@ -12,6 +12,7 @@ export default class Map extends React.Component {
                         latitudeDelta: 0.1,
                         longitudeDelta: 0.1
                     }}
+                    scrollEnabled={false}
                 >
                     <MapView.Marker
                         coordinate={{
@@ -29,13 +30,13 @@ export default class Map extends React.Component {
 const styles = StyleSheet.create({
     container: {
         position: 'absolute',
-        width: 300,
+        width: 325,
         height: 300,
         // top: 0,
         // left: 0,
         // bottom: 0,
         // right: 0,
-        justifyContent: 'flex-end',
+
         alignItems: 'center'
     },
     map: {
@@ -44,6 +45,7 @@ const styles = StyleSheet.create({
         left: 0,
         bottom: 0,
         right: 0,
+
     }
 
 

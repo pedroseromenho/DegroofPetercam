@@ -1,6 +1,6 @@
 import React from "react";
-import { View, Text, Image, StyleSheet } from "react-native";
-import { Icon, Avatar } from "react-native-elements";
+import { View, StyleSheet } from "react-native";
+import { Avatar } from "react-native-elements";
 
 export default class AvatarContainer extends React.Component {
     render() {

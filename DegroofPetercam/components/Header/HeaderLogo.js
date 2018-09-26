@@ -6,8 +6,8 @@ class HeaderLogo extends Component {
   render() {
     return (
       <SvgUri
-        width="130"
-        height="47"
+        width={130}
+        height={47}
         style={styles.logo}
         source={require("./logo.svg")}
       />

@@ -5,22 +5,34 @@ import CardItem from "./components/Cards/CardItem";
 import FooterContainer from "./components/Footer/Footer";
 import LogIn from "./components/LogIn/LogIn";
 import SignUp from "./components/SignUp/SignUp";
+import MyMissionsDetails from "./components/MyMissionsDetails";
+import Popup from "./components/Confirmation/Confirmation";
+import ButtonApp from "./components/Avatar/Button";
+// import MyDatePicker from "./components/DatePicker/DatePicker";
+
+
 
 export default class App extends React.Component {
+
+
   render() {
     return (
       <View style={styles.container}>
-        <View style={styles.header}>
+        <Popup />
+        <ButtonApp />
+        {/* <MyMissionsDetails /> */}
+        {/* <View style={styles.header}>
           <HeaderContainer />
         </View>
         <View style={styles.cardItem}>
           <CardItem />
           {/* <SignUp /> */}
-        </View>
-        <View style={styles.footer}>
-          <FooterContainer />
-        </View>
       </View>
+
+      // <View style={styles.footer}>
+      //   <FooterContainer />
+      // </View> * /}
+      // </View >
       // <View>
       //   <LogIn />
       // </View>
@@ -33,7 +45,7 @@ const styles = StyleSheet.create({
     flex: 1
   },
   header: {
-    heigth: "10%"
+    height: "10%"
   },
 
   cardItem: {

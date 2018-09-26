@@ -10,7 +10,7 @@ export default class HeaderContainer extends React.Component {
         <Icon
           name="chevron-left"
           color="#fff"
-          size="35"
+          size={35}
           containerStyle={{ marginLeft: -8, top: 8 }}
         />
         <HeaderLogo />
