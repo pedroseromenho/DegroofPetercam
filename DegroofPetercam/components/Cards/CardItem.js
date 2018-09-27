@@ -5,6 +5,9 @@ import { Icon, Avatar } from "react-native-elements";
 import { offers } from "../data";
 
 export default class CardItem extends React.Component {
+  static navigationOptions = {
+    header: null
+  };
   render() {
     return (
       <ScrollView style={{}} containerStyle={{ padding: 0 }}>

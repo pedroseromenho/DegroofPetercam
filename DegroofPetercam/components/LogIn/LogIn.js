@@ -10,6 +10,9 @@ export default class LogIn extends React.Component {
       description: "Philantropy Management Application"
     };
   }
+  static navigationOptions = {
+    header: null
+  };
   render() {
     return (
       <View>
@@ -27,6 +30,7 @@ export default class LogIn extends React.Component {
         />
         <View style={{ position: "absolute", top: 300, left: 50 }}>
           <Button
+            onPress={() => this.props.navigation.navigate("SignIn")}
             title="LOG IN"
             buttonStyle={{
               marginBottom: 20,
@@ -57,6 +61,7 @@ export default class LogIn extends React.Component {
               borderRadius: 5
             }}
             color="#50C285"
+            onPress={() => this.props.navigation.navigate("SignUp")}
           />
         </View>
         <Text
