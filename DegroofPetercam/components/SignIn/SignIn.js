@@ -1,6 +1,7 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
 import { Button, FormLabel, FormInput } from "react-native-elements";
+import { Actions } from "react-native-router-flux";
 
 export default class SignIn extends React.Component {
   render() {
@@ -62,6 +63,9 @@ export default class SignIn extends React.Component {
             borderColor: "#CCE3D7"
           }}
           color="#fff"
+          onPress={() => {
+            Actions.offers();
+          }}
         />
       </View>
     );

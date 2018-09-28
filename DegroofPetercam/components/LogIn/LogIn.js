@@ -2,6 +2,7 @@ import React from "react";
 import { Text, View } from "react-native";
 import { Button } from "react-native-elements";
 import SvgUri from "react-native-svg-uri";
+import { Actions } from "react-native-router-flux";
 
 export default class LogIn extends React.Component {
   constructor(props) {
@@ -10,7 +11,8 @@ export default class LogIn extends React.Component {
       description: "Philantropy Management Application"
     };
   }
-  static navigationOptions = {
+
+  navigationOptions = {
     header: null
   };
   render() {
@@ -45,6 +47,9 @@ export default class LogIn extends React.Component {
               borderRadius: 5
             }}
             color="#50C285"
+            onPress={() => {
+              Actions.signIn();
+            }}
           />
           <Button
             title="SIGN UP"
@@ -61,7 +66,9 @@ export default class LogIn extends React.Component {
               borderRadius: 5
             }}
             color="#50C285"
-            onPress={() => this.props.navigation.navigate("SignUp")}
+            onPress={() => {
+              Actions.signUp();
+            }}
           />
         </View>
         <Text

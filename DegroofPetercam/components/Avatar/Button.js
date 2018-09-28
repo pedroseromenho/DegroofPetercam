@@ -1,6 +1,7 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
 import { Button } from "react-native-elements";
+import { Actions } from "react-native-router-flux";
 
 export default class ButtonApp extends React.Component {
   render() {
@@ -20,6 +21,9 @@ export default class ButtonApp extends React.Component {
             borderRadius: 5,
             borderWidth: 1,
             borderColor: "#CCE3D7"
+          }}
+          onPress={() => {
+            Actions.myMissionsDetails();
           }}
         />
       </View>

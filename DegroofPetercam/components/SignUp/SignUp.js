@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet, View, ScrollView } from "react-native";
 import RNPickerSelect from "react-native-picker-select";
 import { Button, FormLabel, FormInput } from "react-native-elements";
+import { Actions } from "react-native-router-flux";
 
 export default class SignUp extends React.Component {
   constructor(props) {
@@ -146,6 +147,9 @@ export default class SignUp extends React.Component {
               borderColor: "#CCE3D7"
             }}
             color="#fff"
+            onPress={() => {
+              Actions.offers();
+            }}
           />
         </View>
       </ScrollView>

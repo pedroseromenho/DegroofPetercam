@@ -8,7 +8,7 @@ import {
   Alert
 } from "react-native";
 import AvatarContainer from "../../components/Avatar/AvatarContainer";
-import ButtonApp from "../../components/Avatar/Button";
+import ButtonSubmitDate from "../../components/Avatar/ButtonSubmitDate";
 import Map from "../../components/Map/Map";
 import MyDatePicker from "../../components/DatePicker/DatePicker";
 export default class MyMissionsDetails extends React.Component {
@@ -26,6 +26,7 @@ export default class MyMissionsDetails extends React.Component {
       ]
     );
   }
+
   render() {
     return (
       <ScrollView style={{ padding: 20 }}>
@@ -56,7 +57,7 @@ export default class MyMissionsDetails extends React.Component {
             <MyDatePicker />
           </View>
           <TouchableOpacity title={"SUBMIT DATE"} onPress={() => this.button()}>
-            <ButtonApp title={"SUBMIT DATE"} />
+            <ButtonSubmitDate title={"SUBMIT DATE"} />
           </TouchableOpacity>
         </View>
         <View

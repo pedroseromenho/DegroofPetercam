@@ -1,8 +1,9 @@
 import React from "react";
 import { View, Text, StyleSheet, ScrollView } from "react-native";
 import { Avatar } from "react-native-elements";
-import Button from "../Avatar/Button";
+import ButtonApp from "../Avatar/Button";
 import { singleOffer } from "../data";
+import { Actions } from "react-native-router-flux";
 
 export default class DetailsOffer extends React.Component {
   render() {
@@ -74,7 +75,12 @@ export default class DetailsOffer extends React.Component {
                   {o.description}
                 </Text>
               </View>
-              <Button title={"Apply for this mission".toLocaleUpperCase()} />
+              <ButtonApp
+                title={"Apply for this mission".toLocaleUpperCase()}
+                onPress={() => {
+                  Actions.evaluation();
+                }}
+              />
             </View>
           );
         })}
