@@ -1,27 +1,28 @@
 {
   "expo": {
-    "name": "DegroofPetercam",
-    "description": "This project is really great.",
+    "name": "Philantropy Management App",
+    "icon": "./logo-app.png",
+    "description": "Philantropy Management App",
     "slug": "DegroofPetercam",
     "privacy": "public",
     "sdkVersion": "30.0.0",
     "platforms": ["ios", "android"],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./logo-app.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
+    },
+    "android": {
+      "package": "com.degroof.petercam"
     }
   }
 }
