@@ -1,8 +1,6 @@
 # DegroofPetercam Application
 
-## Creation of an App for DegroofPetercam to act as a bridge between their contacts
-## who require coaching or mentoring and DegroofPetercam employe who are willing to offer 
-## their time and skills for to benefit of those contacts.
+### Creation of an App for DegroofPetercam to act as a bridge between their contacts who require coaching or mentoring and DegroofPetercam employe who are willing to offer their time and skills for to benefit of those contacts.
 
 ### Team members for this project
 
